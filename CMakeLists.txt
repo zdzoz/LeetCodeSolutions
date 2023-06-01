@@ -14,5 +14,5 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(LeetCode GroupAnagram.cpp ValidPalindrome.cpp)
+add_executable(LeetCode src/Arrays&Hashing/GroupAnagram.cpp src/TwoPointers/ValidPalindrome.cpp src/Graphs/NumberOfIslands.cpp src/Graphs/CloneGraph.cpp src/Graphs/MaximumSubarray.cpp)
 target_link_libraries(LeetCode gtest gtest_main)
